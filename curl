@@ -1,0 +1,16 @@
+curl http://localhost:4000/infocards1/user1/
+curl http://localhost:4000/enablecard1/user1/INTERNATIONAL
+
+curl http://localhost:4000/infocards2/user1/
+curl http://localhost:4000/enablecard2/user1/INTERNATIONAL
+
+curl http://localhost:4000/infocards3/user1/
+curl http://localhost:4000/enablecard3/user1/INTERNATIONAL
+
+curl http://localhost:4000/infocards4/user1/
+curl http://localhost:4000/enablecard4/user1/INTERNATIONAL
+
+curl http://localhost:4000/infocards5/user1/
+curl http://localhost:4000/enablecard5/user1/INTERNATIONAL
+
+

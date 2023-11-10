@@ -1,0 +1,73 @@
+{
+    "name": "serv40",
+    "version": "1.0.0",
+    "description": "Serv40 application implemented in JavaScript",
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "engineStrict": true,
+    "author": "RFF",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/ritxifer/serv40.git"
+    },
+    "bugs": {
+        "url": "https://gitlab.com/ritxifer/serv40/issues"
+    },
+    "homepage": "https://gitlab.com/ritxifer/serv40#readme",
+    "keywords": [
+        "serv40",
+        "servitizacion",
+        "troqueleria",
+        "blockchain",
+        "hyperledger",
+        "fabric"
+    ],
+    "license": "ISC",
+    "dependencies": {
+        "aes-ecb": "^1.3.10",
+        "cookie-parser": "~1.4.4",
+        "cors": "^2.8.5",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "fabric-ca-client": "^1.4.8",
+        "fabric-network": "~1.4.0",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1",
+        "node-rest-client": "^3.1.0",
+        "node-rsa": "^1.1.1",
+        "pug": "2.0.0-beta11",
+        "sleep": "^6.1.0",
+        "uuid-random": "^1.3.0"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.9.0",
+        "mocha": "^5.2.0",
+        "nyc": "^13.1.0",
+        "sinon": "^7.1.1",
+        "sinon-chai": "^3.3.0"
+    },
+    "nyc": {
+        "exclude": [
+            "coverage/**",
+            "test/**"
+        ],
+        "reporter": [
+            "text-summary",
+            "html"
+        ],
+        "all": true,
+        "check-coverage": true,
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+    }
+}
